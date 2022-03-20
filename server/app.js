@@ -43,15 +43,15 @@ app.post('/blockUser', function (req, res) {
 
         mongoClient.close();
 
-        // for (userNum in usersToBlock) {
-        //     let screenName =  usersToBlock[userNum]['username']
-        //     let params = {screen_name: screenName, skip_status: 1}
-        //     client.post('blocks/create.json', params, function(error, tweets) {
-        //         if (error) {
-        //             console.log(error) 
-        //         }
-        //   })
-        // }
+        for (userNum in usersToBlock) {
+            let screenName =  usersToBlock[userNum]['username']
+            let params = {screen_name: screenName, skip_status: 1}
+            client.post('blocks/create.json', params, function(error, tweets) {
+                if (error) {
+                    console.log(error) 
+                }
+          })
+        }
     })
 })
 
