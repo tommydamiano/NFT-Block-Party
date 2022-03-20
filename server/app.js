@@ -33,13 +33,13 @@ app.post('/blockUser', function (req, res) {
         const summaryStats = calculateSummaryStats(usersToBlock)
         res.send({usersToBlock: usersToBlock, summaryStats: summaryStats})
 
-//         const appUsersCollection = mongoClient.db('nftblocker').collection('app_users');
-//         const userInDB = await appUsersCollection.findOne({ username: userScreenName })
-//         if (userInDB == null) {
-//             await appUsersCollection.insertOne({ username: userScreenName, uses: 1 })
-//         } else {
-//             await appUsersCollection.updateOne({ username: userScreenName }, { $set: { uses: userInDB.uses + 1 } })
-//         }
+        // const appUsersCollection = mongoClient.db('nftblocker').collection('app_users');
+        // const userInDB = await appUsersCollection.findOne({ username: userScreenName })
+        // if (userInDB == null) {
+        //     await appUsersCollection.insertOne({ username: userScreenName, uses: 1 })
+        // } else {
+        //    await appUsersCollection.updateOne({ username: userScreenName }, { $set: { uses: userInDB.uses + 1 } })
+        // }
 
         mongoClient.close();
 
