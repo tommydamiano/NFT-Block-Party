@@ -3,13 +3,13 @@ from time import sleep
 import pymongo
 from pymongo import MongoClient
 
-cluster = MongoClient('mongodb+srv://tommydamiano:nftblocker@cluster0.smksg.mongodb.net/nftblocker?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE')
+cluster = MongoClient('mongodb+srv://tommydamiano:nohackmedatabase4u')
 collection = cluster['nftblocker']['users_to_block_v2']
 
-API_KEY = '18bsO52ETJpwrb5wAzdmZjusg'
-API_SECRET_KEY = 'np8NXLf9HCuxpUQfHTqlej1EMIp61vxhIkVTNvqoXA3GcyekSC'
-ACCESS_TOKEN = '354084864-83TeWmznqrCUdx9cu7yxRqvynJ7t0YawSMgvbbwZ'
-ACCESS_TOKEN_SECRET = 'GnZccUREgkFI6GFjTMxNRonIr61yxtcXyVWRdxTt3Rnmg'
+API_KEY = 'no api key 4 u'
+API_SECRET_KEY = 'no api secret key 4 u'
+ACCESS_TOKEN = 'no access token 4 u'
+ACCESS_TOKEN_SECRET = 'no token secret 4 u'
 auth = tweepy.OAuthHandler(API_KEY, API_SECRET_KEY)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
