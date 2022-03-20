@@ -54,3 +54,5 @@ if __name__ == '__main__':
         get_users_to_block_by_user(word)   #cryptocurrency, crypto, eth, bitcoin, ethereum, blockchain, nft, nft art, bored ape, BAYC, cryptopunk, web3, sol, solana, DAO, DeFi
     for word in ['#BAYC', '#newnftprofilepic', '#nft', '#apefollowape']:
         get_users_to_block_by_tweets(word)
+
+       
