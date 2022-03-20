@@ -1,0 +1,8 @@
+/* Phone */
+@media (max-width: 500px) {
+    button:hover {
+        background-color: #FFF;
+        border: 1px solid #FFF;
+        color: black;
+    }
+}

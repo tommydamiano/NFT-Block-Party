@@ -1,0 +1,261 @@
+.BlockPage {
+    color: #FFFF;
+}
+
+.BlockPage h1 {
+    font-family: 'Montserrat';
+}
+
+.BlockPage span {
+    font-family: sans-serif;
+}
+
+.BlockPage a {
+    color: #FFFF;
+    text-decoration: none;
+}
+
+.greet-user-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    margin-top: -1vh;
+}
+
+.greet-user-container img {
+    border-radius: 23px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.log-out-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.log-out-button-container button {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 20px;
+	background-color: #FFF;
+	color: black;
+	padding: 5px 24px;
+    transition: 300ms ease-in-out;
+    border: 1px solid #FFF;
+    font-size: 0.8rem;
+    margin-top: 1vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.log-out-button-container button:active {
+	transform: scale(0.95);
+}
+
+.log-out-button-container button:focus {
+	outline: none;
+}
+
+.log-out-button-container button:hover {
+    background-color: #5aa4eb;
+    border: 1px solid #5aa4eb;
+    color: #FFF;
+}
+
+.instructions-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instructions-container-remove {
+    display: none;
+    visibility: hidden;
+}
+
+.instructions-container span {
+    font-size: 1.4rem;
+    margin-top: -1.25vh;
+    margin-bottom: 1vh;
+}
+
+.block-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.block-button-container-is-spinning {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.block-button-container img {
+    height: 260px;
+    margin-top: 4vh;
+    cursor: pointer;
+    /* animation:spin 1s linear infinite; */
+}
+
+.block-button-container-is-spinning img {
+    height: 260px;
+    margin-top: 4vh;
+    animation: spin 5s linear infinite;
+}
+
+.block-button-container-remove {
+    display: none;
+    visibility: hidden;
+}
+
+@keyframes spin { 100% { transform:rotate(1439deg); } }
+
+/* Large Monitor */
+@media (min-width: 1515px) and (min-height: 805px) {
+    .greet-user-container {
+        font-size: 1.22rem;
+        margin-top: 3vh;
+    }
+
+    .greet-user-container img{
+        border-radius: 25px;
+        height: 53px;
+        margin-left: 12px;
+    }
+
+    .block-button-container img {
+        height: 320px;
+        margin-top: 4vh;
+        margin-bottom: 1vh;        
+    }
+    
+    .block-button-container-is-spinning img {
+        height: 320px;
+        margin-top: 4vh;
+        animation: spin 5s linear infinite;
+        margin-bottom: 0.5vh;   
+    }
+
+    .log-out-button-container button { 
+        padding: 4px 24px;
+        font-size: 0.95rem;
+        margin-top: 1.5vh;
+    }
+}
+
+@media (min-height: 805px) {
+    .greet-user-container {
+        margin-top: 3vh;
+    }
+}
+
+/* Gettin smaller! */
+@media (max-width: 1010px) {
+    .greet-user-container {
+        font-size: 1.08rem;
+        text-align: center;
+    }
+    
+    .greet-user-container img {
+        height: 47px;
+    }
+
+    .instructions-container span {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}
+  
+  /* Gettin smaller! */
+  @media (max-width: 620px) {
+    .greet-user-container {
+        margin-top: 1vh;
+        font-size: 0.98rem;
+    }
+
+    .instructions-container span {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+/* iPad */
+@media (min-height: 1150px) {
+    .greet-user-container {
+        font-size: 1.3rem;
+        margin-top: 6vh;
+    }
+
+    .greet-user-container img{
+        height: 50px;
+    }
+
+    .instructions-container span {
+        font-size: 1.4rem;
+        margin-bottom: 1vh;
+        margin-top: 0.25vh;
+        text-align: center;
+    }
+
+    .block-button-container img {
+        height: 320px;
+        margin-top: 4vh;
+        margin-bottom: 1vh;        
+    }
+    
+    .block-button-container-is-spinning img {
+        height: 320px;
+        margin-top: 4vh;
+        animation: spin 5s linear infinite;
+        margin-bottom: 0.5vh;   
+    }
+  }
+
+/* Phone */
+@media (max-width: 420px) {
+    .log-out-button-container button { 
+        padding: 2px 18px;
+        font-size: 0.75rem;
+    }
+
+    .greet-user-container {
+        font-size: 0.9rem;
+        margin-top: 6vh;
+    }
+
+    .greet-user-container img{
+        height: 40px;
+    }
+
+    .instructions-container span {
+        font-size: 1.1rem;
+        margin-bottom: 1vh;
+        margin-top: 0.25vh;
+        text-align: center;
+    }
+}
+
+/* Smaller Phone */
+@media (max-width: 420px) and (max-height: 670px) {
+    .block-button-container img {
+        height: 225px;
+    }
+    
+    .block-button-container-is-spinning img {
+        height: 225px;
+    }
+}
+
+
+/* Smallest Phone */
+@media (max-width: 360px) {
+    .greet-user-container img {
+        display: none;
+    }
+}

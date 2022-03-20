@@ -1,0 +1,54 @@
+.buy-me-a-coffee-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-me-a-coffee-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    bottom: 0;
+    margin-bottom: 2vh;
+    position: absolute;
+    bottom: 0;
+    border-bottom: 0.8px solid #FFFF;
+}
+
+.buy-me-a-coffee-container a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px;
+    position: relative;
+}
+
+
+.buy-me-a-coffee-container span {
+    color: #FFFF;
+    text-decoration: none;
+    font-family: sans-serif;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+/* Poof! I have disappeared! */
+@media (max-height: 525px) {
+    .buy-me-a-coffee-container {
+        display: none;
+    }
+}
+
+/* Large Monitor */
+@media (min-width: 1515px) and (min-height: 805px) {
+    .buy-me-a-coffee-container {
+        font-size: 1.21rem;
+    }
+}
+
+/* Phone */
+@media (max-width: 420px) {
+    .buy-me-a-coffee-container {
+        font-size: 1rem;
+    }
+}

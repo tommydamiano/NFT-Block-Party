@@ -1,0 +1,51 @@
+.DisplayedUsers .users-being-blocked-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.DisplayedUsers .users-being-blocked-container span {
+    font-size: 1.6rem;
+    margin-right: 10px;
+}
+
+.DisplayedUsers .users-being-blocked-container img {
+    height: 50px;
+    border-radius: 23px;
+}
+
+.content-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vh;
+    overflow: hidden;
+    min-height: 50px;
+}
+
+/* Gettin smaller! */
+@media (max-width: 1010px) {
+    .DisplayedUsers .users-being-blocked-container span {
+        font-size: 1.6rem;
+    }
+}
+  
+  /* Gettin smaller! */
+  @media (max-width: 620px) {
+    .DisplayedUsers .users-being-blocked-container span {
+        font-size: 1.5rem;
+    }
+}
+
+/* Phone */
+@media (max-width: 420px) {
+    .DisplayedUsers .users-being-blocked-container span {
+        font-size: 1.32rem;
+        margin-right: 10px;
+    }
+
+    .DisplayedUsers .users-being-blocked-container img {
+        height: 43px;
+    }
+}
