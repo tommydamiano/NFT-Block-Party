@@ -17,13 +17,13 @@ app.post('/blockUser', function (req, res) {
     const userScreenName = response.userScreenName
 
     const client = new Twitter({
-        consumer_key: 'yoigX2YzZHTBApPIVhaOnkXHH',
-        consumer_secret: 'iLYeeew9DgJXu5vPNWhkD4Nh483NFEwp0EbNpBiGBUWMesgAWm',
+        consumer_key: 'no key 4 u',
+        consumer_secret: 'no token 4 u',
         access_token_key: token,
         access_token_secret: secret
     })
     
-    const uri = 'mongodb+srv://tommydamiano:nftblocker@cluster0.smksg.mongodb.net/nftblocker?retryWrites=true&w=majority'
+    const uri = 'mongodb+srv://tommydamiano:nohackmedatabase4u'
     const mongoClient = new MongoClient(uri, { useNewUrlParser: true }, { useUnifiedTopology: true});
 
     mongoClient.connect(async () => {
